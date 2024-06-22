@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookmarker</title>
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/fontawesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+  <div class="container pt-4">
+    <h1 class="text-muted">Bookmarker</h1>
+    <hr>
+    <div class="text-center p-5 my-5 bg-secondary-subtle ">
+      <h2>Bookmark Your Favoriate Site</h2>
+      <label for="name" class="fw-bolder py-1">Site Name</label>
+      <input type="text" id="name" placeholder="Enter site name" autocomplete="on" class="form-control py-1  m-auto">
+      <label for="url" class="fw-bolder py-1">Site Url</label>
+      <input  type="text" id="url" placeholder="Enter site url" autocomplete="on" class="form-control py-1  m-auto">
+      <button class="btn btn-primary mt-3" id="addBtn" disabled >Submit</button>
+    </div>
+    <input type="text" placeholder="search" class="form-control" id="search" onkeyup="search(this.value)">
+    <div class=" py-5 my-5 bg-secondary-subtle ">
+      <table class="table">
+        <thead></thead>
+        <tbody id="tableBody" >
+
+        </tbody>
+      </table>
+    </div>
+    <hr>
+    <footer>
+      <h6 class="text-muted">@ 2019 Bookmaker Inc. </h6>
+    </footer>
+  </div>
+
+
+  <script src="js/main.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+
+</html>
